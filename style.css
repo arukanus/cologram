@@ -1,0 +1,51 @@
+@import url("http://fonts.googleapis.com/css?family=TimesNewRoman:400,300,700");
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%; /* Ensure full width */
+    color: #0E152B;
+    background: linear-gradient(to right, 
+        #FFB3BA 0%, #FFDFBA 5%, #FFFFBA 10%, #BAFFC9 15%, #BAE1FF 20%, 
+        #F2C1D1 25%, #FDE4CF 30%, #FEFECB 35%, #CBFECF 40%, #CBF7FE 45%,
+        #ECC7DE 50%, #FBDBC7 55%, #FEF9C7 60%, #C7FDD9 65%, #C7EEFD 70%,
+        #D5C4E1 75%, #FAE7D0 80%, #FAFAD0 85%, #D0FAE4 90%, #D0E9FA 95%);
+
+    min-height: 100vh;
+    font-family: 'Times New Roman', sans-serif !important;
+  }
+  
+  .navbar {
+    width: 100%; /* Full width */
+  }
+  nav {
+    background-color: #0E152B;
+}
+  .container {
+    max-width: 100%; /* Prevent horizontal expansion */
+  }
+  
+  img {
+    max-width: 100%; /* Ensure images don't cause overflow */
+  }
+  
+  .form-control, .form-range {
+    width: 100%; /* Full width for form elements */
+  }
+
+#colorList {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+}
+
+#colorList li {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    display: inline-block;
+    margin: 5px;
+    cursor: pointer;
+}

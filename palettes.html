@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classic Color Palettes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .palette {
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #ddd; /* Optional border */
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Optional shadow */
+}
+
+.color-swatch {
+    height: 40px; /* Set a fixed height for each color swatch */
+    border-radius: 5px; /* Optional rounded corners */
+    margin-bottom: 5px; /* Space between swatches */
+}
+
+        .navbar {
+    width: 100%; /* Full width */
+  }
+  nav {
+    background-color: #0E152B;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%; /* Ensure full width */
+    color: #0E152B;
+    background: linear-gradient(to right, 
+        #FFB3BA 0%, #FFDFBA 5%, #FFFFBA 10%, #BAFFC9 15%, #BAE1FF 20%, 
+        #F2C1D1 25%, #FDE4CF 30%, #FEFECB 35%, #CBFECF 40%, #CBF7FE 45%,
+        #ECC7DE 50%, #FBDBC7 55%, #FEF9C7 60%, #C7FDD9 65%, #C7EEFD 70%,
+        #D5C4E1 75%, #FAE7D0 80%, #FAFAD0 85%, #D0FAE4 90%, #D0E9FA 95%);
+
+    min-height: 100vh;
+    font-family: 'Times New Roman', sans-serif !important;
+  }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./images/logo_n!.svg" alt="Logo" style="height: 30px;">
+          </a>
+        </div>
+      </nav>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-4">
+                <h4>Dark Palette</h4>
+                <div class="palette" onclick="copyCSS('#333333', '#666666', '#999999', '#CCCCCC', '#FFFFFF')">
+                    <div class="color-swatch" style="background-color: #333333;"></div>
+                    <div class="color-swatch" style="background-color: #666666;"></div>
+                    <div class="color-swatch" style="background-color: #999999;"></div>
+                    <div class="color-swatch" style="background-color: #CCCCCC;"></div>
+                    <div class="color-swatch" style="background-color: #FFFFFF;"></div>
+                </div>
+            </div>            
+            <div class="col-md-4">
+                <h4>Vibrant Palette</h4>
+                
+                <div class="palette" onclick="copyCSS('#FF6347', '#FF4500', '#FFD700', '#32CD32', '#4682B4')">
+                    <div class="color-swatch" style="background-color: #FF6347;"></div>
+                    <div class="color-swatch" style="background-color: #FF4500;"></div>
+                    <div class="color-swatch" style="background-color: #FFD700;"></div>
+                    <div class="color-swatch" style="background-color: #32CD32;"></div>
+                    <div class="color-swatch" style="background-color: #4682B4;"></div>
+                </div>
+                
+            </div>
+            <div class="col-md-4">
+                <h4>Pastel Palette</h4>
+                
+                <div class="palette" onclick="copyCSS('#FFB6C1', '#FFDAB9', '#FFFFE0', '#E0FFFF', '#B0E0E6')">
+                    <div class="color-swatch" style="background-color: #FFB6C1;"></div>
+                    <div class="color-swatch" style="background-color: #FFDAB9;"></div>
+                    <div class="color-swatch" style="background-color: #FFFFE0;"></div>
+                    <div class="color-swatch" style="background-color: #E0FFFF;"></div>
+                    <div class="color-swatch" style="background-color: #B0E0E6;"></div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center w-auto p-3" style="color: #0E152B; padding: 20px;" >
+        <h1><strong>Click on the color to copy its CSS code</strong></h1>
+        
+      </div>
+
+    <script>
+        function copyCSS(...colors) {
+            const css = colors.map((color, index) => `--color-${index + 1}: ${color};`).join("\n");
+            navigator.clipboard.writeText(css).then(() => alert('CSS Copied!'), () => alert('Failed to copy CSS.'));
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
