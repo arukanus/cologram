@@ -54,6 +54,7 @@ background: linear-gradient(to right,
         #ECC7DE 50%, #FBDBC7 55%, #FEF9C7 60%, #C7FDD9 65%, #C7EEFD 70%,
         #D5C4E1 75%, #FAE7D0 80%, #FAFAD0 85%, #D0FAE4 90%, #D0E9FA 95%);
 
-2) Color picker contains a pipette that can pick ANY color on the website! Including Complimentary and Analogue colors, which compensates for the known bug.
+2) Color picker contains a pipette that can pick ANY color on your window! Including Complimentary and Analogue colors, which compensates for the known bug.
 
-3) Using bootstrap 5, replaced the default modifier classes with the .btn-outline-* ones to remove all background images and colors on button.
+3) Using bootstrap 5, replaced the default modifier classes with the .btn-outline-* ones to remove all background images and colors on 'save palette to history' and 2 other buttons.
+
