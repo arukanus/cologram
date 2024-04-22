@@ -3,7 +3,7 @@
 body, html {
     margin: 0;
     padding: 0;
-    width: 100%; /* Ensure full width */
+    width: 100%; 
     color: #0E152B;
     background: linear-gradient(to right, 
         #FFB3BA 0%, #FFDFBA 5%, #FFFFBA 10%, #BAFFC9 15%, #BAE1FF 20%, 
@@ -16,21 +16,21 @@ body, html {
   }
   
   .navbar {
-    width: 100%; /* Full width */
+    width: 100%; 
   }
   nav {
     background-color: #0E152B;
 }
   .container {
-    max-width: 100%; /* Prevent horizontal expansion */
+    max-width: 100%; 
   }
   
   img {
-    max-width: 100%; /* Ensure images don't cause overflow */
+    max-width: 100%; 
   }
   
   .form-control, .form-range {
-    width: 100%; /* Full width for form elements */
+    width: 100%;
   }
 
 #colorList {
